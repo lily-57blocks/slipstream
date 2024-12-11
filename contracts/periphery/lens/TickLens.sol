@@ -33,7 +33,6 @@ contract TickLens is ITickLens {
                 (uint128 liquidityGross, int128 liquidityNet,,,,,,,,) = ICLPool(pool).ticks(populatedTick);
                 populatedTicks[--numberOfPopulatedTicks] = PopulatedTick({
                     tick: populatedTick,
-                    sqrtRatioX96: TickMath.getSqrtRatioAtTick(populatedTick),
                     liquidityNet: liquidityNet,
                     liquidityGross: liquidityGross
                 });

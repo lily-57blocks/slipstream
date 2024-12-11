@@ -71,7 +71,7 @@ contract TickLensTest is TickLens {
 
                     populatedTicks[--numberOfPopulatedTicks] = PopulatedTick({
                         tick: populatedTick,
-                        sqrtRatioX96: TickMath.getSqrtRatioAtTick(populatedTick),
+                        // sqrtRatioX96: TickMath.getSqrtRatioAtTick(populatedTick),
                         liquidityNet: liquidityNet,
                         liquidityGross: liquidityGross
                     });
